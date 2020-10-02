@@ -1,4 +1,4 @@
-
+[TOC]
 
 ## A warehouse management WeChat small program 
 
@@ -12,25 +12,15 @@
 
 ### Ⅰ. Functions
 
-- Scan one-dimensional codes and two-dimensional codes and return the result
-
-- Return the information of the product by scanning codes
-
+-  Scan one-dimensional codes and two-dimensional codes and return the result
+-  Return the information of the product by scanning codes
 - Put the goods into the warehouse and pass the name, price, and storage time of the goods into the database
-
 - Use list to display information about the items in the warehouse and display the stock number
-
 - Remove items from the warehouse to the recycle bin
-
 - Pop up a window when the inventory is zero
-
 - Manual input date to query the goods and quantity on a specific day
-
 - Recycle bin can display outgoing record and outgoing quantity
-
 - Click to empty recycle bin
-
-  
 
 ### Ⅱ. Processes
 
@@ -61,10 +51,8 @@
       })
   }
   ```
-  ![](images/扫码.png)
   
-  
-  
+- <img src="images\扫码.png" style="zoom:50%;" />
 
 #### 2、Identify the type of goods
 
@@ -141,8 +129,7 @@
           },
   ```
 
-  
-
+- ![](images\数据库.png)
 
 ### 2.2 The warehouse page
 
@@ -327,8 +314,6 @@ if(count==0){
 
 https://blog.csdn.net/qq_39650528/article/details/80021765
 
-
-
 ### Ⅲ. The recycle bin
 
 #### 1、What the recycle bin displays?
@@ -336,7 +321,10 @@ https://blog.csdn.net/qq_39650528/article/details/80021765
 The code snippets of the page is similar to the pages that have been refered 
 
 - Display the time, price, name of the goods in the page
+
 - You can empty the recycle bin whenever you want
+
+  ![](images\出库列表.PNG)
 
 #### 2、Principle of the way that the recycle bin works
 
@@ -385,13 +373,9 @@ The code snippets of the page is similar to the pages that have been refered
 
 > Attention: the cloud function in the 'app.js' need to be initialized,  the path of the cloud function should be added to 'project.config.json', the javascript file in the cloud function should be reuploaded every time you modify it.
 
-
-
 ### Ⅳ. Development direction
 
 - Extract the time whenever an item is added or deleted to the database, and draw a graph to reflect the frequency.
-
-
 
 ### Ⅴ. Conclusion
 
