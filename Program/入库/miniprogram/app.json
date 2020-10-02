@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/QRC/QRC",
+    "pages/record/record",
+    "pages/search/search"
+  ],
+  "window": {
+    "backgroundColor": "#f9f9f9",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f9f9f9",
+    "navigationBarTitleText": "库存管理小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "iconPath": "assets/img/search-1.png",
+        "selectedIconPath": "assets/img/search.png",
+        "pagePath": "pages/home/home",
+        "text": "一维码和二维码识别"
+      },
+      {
+        "iconPath": "assets/img/dy-1.png",
+        "selectedIconPath": "assets/img/dy.png",
+        "pagePath": "pages/QRC/QRC",
+        "text": "仓库管理"
+      },
+      {
+        "iconPath": "assets/img/tj.png",
+        "selectedIconPath": "assets/img/dy.png",
+        "pagePath": "pages/record/record",
+        "text": "出库记录"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

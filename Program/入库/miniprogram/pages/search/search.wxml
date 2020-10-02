@@ -1,0 +1,38 @@
+<!--miniprogram/pages/search/search.wxml-->
+<view class="collect_big_box">
+  <!--列表盒子  -->
+  <view class="collect_list_box">
+  <!--查询窗口-->
+    <form bindsubmit="getmonth">
+       <input name="input" type="text" value='' placeholder="Please input the date,such as '7月5日'" />
+       <button form-type="submit">Search</button>
+    </form>
+
+    <scroll-view bindscrolltolower="lower" scroll-y="true" style="height: 100%">
+    <!--搜索列表盒子-->
+    <view class="recordList_box">
+        <!--外层大盒子  -->
+        <view class="content_box" wx:for="{{house}}" wx:key="unique">
+          <view class="view_ce">
+          <!--每个小方格里的内容-->
+           <view class="content_box_center">
+            <view class="view_content">
+                <view class='view_title'>{{item.name}}</view>
+                <view class="view_fl">
+                  <text>{{item.price}}</text>
+                  <text>上传时间:{{item.time}}</text>
+                </view>
+            </view>
+          </view>
+          </view>
+        </view>
+        
+    </view>
+    
+    </scroll-view>
+    <view>
+      <button style="height:100%;width:100%" bindtap="refresh">Refresh</button>
+      <input class='height:100rpx' type='text' value='Record：{{ count }}'></input>
+    </view>
+  </view>
+</view>

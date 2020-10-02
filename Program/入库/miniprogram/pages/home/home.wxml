@@ -1,0 +1,12 @@
+<!--pages/home/home.wxml-->
+<!--test.wxml-->
+<view class="container">
+  <button class="normal" bindtap="getQRCode">Scan</button>
+  <input class='result' type='text' value='Result:{{ qRCodeMsg }}'></input>
+  <input class='result' type='text' value='Type:{{ scanType }}'></input>
+  <input class='result' type='text' value='Charset: {{ charSet }}'></input>
+  <view class='result'>--------------------------</view>
+  <input class='commodity' type='text' value='Name:{{name}}'></input>
+  <input class='result' type='text' value='Price:{{ price }}'></input>
+  <input class='result' type='text' value='Time:{{time}}'></input>
+</view>

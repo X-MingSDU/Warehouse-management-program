@@ -1,0 +1,34 @@
+<!--pages/QRC/QRC.wxml-->
+<view class="collect_big_box">
+  <!--列表盒子  -->
+  <view class="collect_list_box">
+    <scroll-view bindscrolltolower="lower" scroll-y="true" style="height: 100%">
+    <!--搜索列表盒子-->
+    <view class="recordList_box">
+        <!--外层大盒子  -->
+        <view class="content_box" wx:for="{{house}}" wx:key="unique">
+          <view class="view_ce">
+          <!--每个小方格里的内容-->
+           <view class="content_box_center">
+            <view class="view_content">
+                <view class='view_title'>{{item.name}}</view>
+                <view class="view_fl">
+                  <text>T1:{{item.price}}</text>
+                  <text>T2:{{item.time}}</text>
+                </view>
+                <view class="delete_btn" bindtap='delete_btn' data-index="{{index}}">出库</view>
+           </view>
+          </view>
+          </view>
+        </view>
+        
+    </view>
+    
+    </scroll-view>
+    <view>
+      <button style="height:100%;width:100%" bindtap="refresh">Refresh</button>
+      <input class='height:100rpx' type='text' value='Quantity：{{ count }}'></input>
+      <button style="height:100%;width:50%;float:right" bindtap="search">Query the record by dates</button>
+    </view>
+  </view>
+</view>
